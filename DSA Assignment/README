@@ -1,0 +1,99 @@
+README - PRASHANTHA DEVMILANA FERNAND0
+
+Shop Finding and Navigation System
+
+
+-------------------------------------------------------------------------------
+Included files
+
+ShopNavigationSystem.java
+Menu program that allows the user to use a shop finding and navigation system.
+In addition to finding and navigating, it also allows a user to add new shops, update shops and add/delete pathways between shops.
+Other functionalities include displaying adjacency list/matrix view of shops, hashtable loadfactor and the shortest path between shops.
+
+Shop.java
+Class file that creates a shop object with parameters that define a shop (Number, Name, Category, Location, Rating).
+
+DSALinkedList.java
+Class file that implements a linked list ADT.
+
+DSAStack.java
+Class file that implements a stack ADT.
+
+DSAQueue.java
+Class file that implements a queue ADT.
+
+DSAGraph.java
+Class file for implementing an undirected graph ADT. Has functions to add/delete nodes and edges, display graph as an adjacency matrix/list
+and beform bfs and dfs between nodes and compare their outcomes.
+
+DSAHashtable.java
+Class file that implements a hashtable ADT and uses step hashing for collision handle and seperate chaining for holding objects with similar entry keys.
+
+DSAHeap.java
+Class file that implements a max heap ADT and uses shop rating as the priority value. 
+Also has functions to perform heapsorting based on rating priority.
+
+DataLoader.java 
+Class file that handles reading csv file to auto populate menu with a set list of shops and pathways for testing purposes
+
+Color.java
+Class file containing ANSI color codes for printing menu statements in different colors.
+
+ShopNavigationSystem Test Case Table.xlsx
+Excel file containing table of test cases describing the functionality of methods in the menu program, test data entered to validate them and
+their expected and actual outcomes (including screenshots of menu outcomes).
+
+TestDetails.csv
+List of shop details which were used for testing (used in the test case table). Shop details in this file can be autoloaded into the menu program 
+for populating the graph nodes by using the DataLoader class functionalities.
+
+TestEdges.csv
+List of shop edges which were used for testing (used in the test case table). Shop edges in this file can be autoloaded into the menu program 
+for populating the graph edges (shop pathways) by using the DataLoader class functionalities.
+
+Test shop graph layout.png
+PNG of graph layout of shop and pathway layout of test data present in TestDetails.csv, TestEdges.csv and the test table excel file.
+
+
+-------------------------------------------------------------------------------
+How To Run The Shop Finding and Navigation Menu Program
+
+1. Ensure all .java have been compiled
+	Run "javac DSALinkedList.java DSAStack.java DSAQueue.java DSAGraph.java DSAHashTable.java DSAHeap.java Shop.java ShopNavigationSystem.java DataLoader.java Color.java" 
+	on the terminal.
+	
+2. Run the program
+	Run "java ShopNavigationSystem" on the terminal
+
+	
+-------------------------------------------------------------------------------
+How To Execute Program Functionalities
+
+
+1. The program will greet you with a menu. Select an option from the menu list to peform its function.
+
+	Press 1 and enter to: Add a Shop (will require entering new shop number, name, category, location and rating)
+	
+	Press 2 and enter to: Delete a Shop (will require entering the shop number of shop to be deleted)
+	
+	Press 3 and enter to: Update a Shop (will require entering the shop number of shop to be updated)
+	
+	Press 4 and enter to: Add Pathway Between Shops (will require entering the shop numbers of shops to add a pathway between)
+	
+	Press 5 and enter to: Delete Pathway Between Shops (will require entering the shop numbers of shops to delete a pathway between)
+	
+	Press 6 and enter to: Display Shops By Category (will display available categories and requires entering one from available list)
+	
+	Press 7 and enter to: Find Shortest Path Between Two Shops (will require entering the shop numbers of shops to find a pathway between)
+	
+	Press 8 and enter to: Display adjacency list and matrix
+	
+	Press 9 and enter to: Display hashtable load factor
+	
+	Press 0 and enter to: Exit
+
+2. After making a menu selection, simply follow the on-screen instructions and enter the required information.
+   Inputs are validated upon entry and should any invalid inputs be entered, the program will notify you of the issue.
+
+
